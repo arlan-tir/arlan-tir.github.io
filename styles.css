@@ -1,0 +1,146 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body
+{
+    margin: 0;
+    background: linear-gradient(teal,sandybrown);
+}
+.header
+{
+    width: 100%;
+    background-color: rgb(0, 100, 100);
+    height: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 30px;
+    color: white;
+    font-size: 16px;
+
+}
+.header__img
+{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 37.5px;
+    object-fit: cover;
+}
+.header__title
+{
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-left: 10px;
+}
+.content
+{
+    font-size: 20px;
+    color: white;
+    background: linear-gradient(teal,sandybrown);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 8rem);
+}
+.container
+{
+    border: 2px solid white;
+    padding: 40px;
+    border-radius: 25px;
+    background-color: rgba(255,255,255, 0.25);
+}
+.container__item
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+.container__img
+{
+    width: 500px;
+    overflow: hidden;
+    border-radius: 37.5px;
+    object-fit: cover;
+    margin-top: 40px;
+}
+.container__img:hover ~ .container__img
+{
+    transform: translate3d(100px,0,0);
+}
+.container:hover .container__img
+{
+    opacity: 0.3;
+}
+.container:hover .container__img:hover
+{
+    transition: 800ms all;
+    transform: scale(1.2);
+    opacity: 1;
+}
+.footer
+{
+    width: 100%;
+    background-color: rgb(216, 136, 68);
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__item
+{
+    color: white;
+    font-size: 16px;
+}
+
+.animated 
+{
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+  
+.pulse 
+{
+    animation-name: pulse;
+    animation-duration: 1s;
+}
+@keyframes pulse 
+{
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
+@media only screen and (max-width: 600px)
+{
+    .content
+    {
+        background-color: transparent;
+    }
+    .container
+    {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        width: 100%;
+    }
+    .container__item
+    {
+        text-align: justify;
+    }
+    .container__img
+    {
+        width: 300px;
+    }
+}

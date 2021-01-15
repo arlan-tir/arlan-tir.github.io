@@ -3,33 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="styles.css">
     <title>Arlan Tirado</title>
 </head>
 <body>
-    <div id="container">
-        <div id="header">
-            <img id="logo" src="https://i.imgur.com/zSMlhaL.jpg"/>
-            <span id="tagline">Mi sitio web de pruebas</span>
+    <header class="header">
+        <img class="header__img" src="https://images.pexels.com/photos/2916450/pexels-photo-2916450.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Logo de la página">
+        <span class="header__title">Mi sitio web de pruebas</span>
+    </header>
+    <section class="content">
+        <div class="container">
+            <div class="container__item">
+                <p>Este es mi proyecto web en desarrollo.</p>
+                <p>En este sitio web voy probando las herramientas
+                    de programación que aprendo.</p>
+                <img class="container__img" src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Esta es una imagen de Pexels">
+            </div>
         </div>
-        <div id="post">
-            <p>
-                Este es mi proyecto web en desarrollo.
-            </p>
-            <p>
-                En este sitio web programo en html y voy utilizando y 
-                probando las herramientas de programación que 
-                aprendo.
-            </p>
-            <p>
-                <img src="https://i.imgur.com/kqzxNFY.jpeg" width="70%" />
-            </p>
+    </section>
+    <footer class="footer">
+        <div class="footer__item animated pulse">
+            <h2>Gracias por visitar mi sitio web!</h2>
         </div>
-        <div id="footer">
-            <p>
-                Gracias por visitar mi sitio web!
-            </p>
-        </div>
-    </div>
+    </footer>
 </body>
 </html>
