@@ -130,3 +130,39 @@ document.querySelectorAll(".language-menu li").forEach(item => {
 
 // Detectar idioma al cargar la página
 window.onload = detectLanguage;
+
+document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector(".nav-menu");
+
+    menuToggle.addEventListener("click", function() {
+        navMenu.classList.toggle("show"); // Activa o desactiva el menú
+    });});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+    const captionText = document.getElementById("caption");
+    const closeBtn = document.querySelector(".close");
+
+    document.querySelectorAll(".swiper-slide img").forEach(img => {
+        img.addEventListener("click", function () {
+            modal.style.display = "block";
+            modal.style.visibility = "visible"; // Hace visible el modal
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        });
+    });
+
+    closeBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+        modal.style.visibility = "hidden"; // Oculta completamente el modal
+    });
+
+    modal.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+            modal.style.visibility = "hidden"; 
+        }
+    });
+});

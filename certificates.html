@@ -8,7 +8,7 @@
     <title>Arlan Tirado</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <span class="header__title" id="title"><h1>Mi Portafolio Profesional</h1></span>
         <div class="language-dropdown">
             <button id="languageButton">
@@ -25,7 +25,8 @@
             </ul>
         </div>
     </header>
-    <nav>
+    <button class="menu-toggle">&#9776;</button>
+    <nav class="nav-menu">
         <a href="index.html" id="home">Inicio</a>
         <a href="certificates.html" id="certificates">Certificaciones</a>
         <a href="projects.html" id="projects">Proyectos</a>
@@ -67,6 +68,11 @@
                 <span id="greet">Gracias por visitar mi sitio web!</span>
             </p>
         </div>
+    </div>
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
     </div>
     <!-- Swiper.js JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
