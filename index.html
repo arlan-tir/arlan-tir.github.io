@@ -8,9 +8,29 @@
 </head>
 <body>
     <header class="header">
-        <img class="header__img" src="https://images.pexels.com/photos/2916450/pexels-photo-2916450.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Logo de la página">
-        <span class="header__title">Mi sitio web de pruebas</span>
+        <span class="header__title" id="title"><h1>Mi Portafolio Profesional</h1></span>
+        <div class="language-dropdown">
+            <button id="languageButton">
+                <img id="currentFlag" src="flags/en.png" alt="Flag">
+                <span id="currentLang">EN</span>
+            </button>
+            <ul class="language-menu">
+                <li data-lang="es">
+                    <img src="flags/es.png" alt="Español"> <span>ESP</span>
+                </li>
+                <li data-lang="en">
+                    <img src="flags/en.png" alt="English"> <span>ENG</span>
+                </li>
+            </ul>
+        </div>
     </header>
+    <nav>
+        <a href="/WebsiteProject/arlan-tir.github.io/index.html" id="home">Inicio</a>
+        <a href="/WebsiteProject/arlan-tir.github.io/certificates.html" id="certificates">Certificaciones</a>
+        <a href="/WebsiteProject/arlan-tir.github.io/projects.html" id="projects">Proyectos</a>
+        <a href="/WebsiteProject/arlan-tir.github.io/about.html" id="about">Sobre Mi</a>
+        <a href="/WebsiteProject/arlan-tir.github.io/contact.html" id="contact">Contacto</a>
+    </nav>
     <section class="content">
         <div class="container">
             <div class="container__item">
@@ -23,8 +43,11 @@
     </section>
     <footer class="footer">
         <div class="footer__item animated pulse">
-            <h2>Gracias por visitar mi sitio web!</h2>
+            <h2 id="greet">Gracias por visitar mi sitio web!</h2>
         </div>
     </footer>
+    <!-- Swiper.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

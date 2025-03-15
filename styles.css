@@ -9,7 +9,74 @@ body
 {
     margin: 0;
     background: linear-gradient(teal,sandybrown);
+    color: #000;
+    text-align: center;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
 }
+
+/* Encabezado con un degradado de azul a verde */
+header {
+    background: linear-gradient(180deg, #003366, #ADD8E6); /* Azul marino a verde suave */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Menú de navegación con degradado horizontal */
+nav {
+    background: linear-gradient(0deg, #006400, #98FB98); /* Verde oscuro a azul claro */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Efecto hover en los enlaces del menú */
+nav a:hover {
+    background: linear-gradient(180deg, #98FB98, #006400); /* Azul claro a verde oscuro */
+    border-radius: 5px;
+}
+
+/* Contenedor del menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Contenido del menú desplegable con degradado radial */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: linear-gradient(180deg, #98FB98, #006400); /* Azul claro a verde oscuro */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Mostrar el menú desplegable cuando el usuario pasa el mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .header
 {
     width: 100%;
@@ -143,4 +210,166 @@ body
     {
         width: 300px;
     }
+}
+
+
+.language-dropdown {
+    position: absolute;
+    top: 10px;  /* Ajuste superior */
+    right: 20px; /* Ajuste derecho */
+    z-index: 1000;
+}
+
+.language-dropdown button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 8px 15px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.language-dropdown button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #fff;
+}
+
+.language-dropdown img {
+    width: 20px;
+    height: 15px;
+    border-radius: 3px;
+}
+
+.language-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: linear-gradient( #003366, #ADD8E6);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 120px;
+}
+
+.language-menu li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 8px;
+}
+
+.language-menu li:hover {
+    background: #2a7f62;
+    color: white;
+    border-radius: 8px;
+}
+
+.language-menu img {
+    width: 20px;
+    height: 15px;
+}
+
+.language-menu.show {
+    display: block; /* Mostrar cuando se active */
+}
+
+.swiper {
+    width: auto;
+    max-width: 100%;
+    margin: 30px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-wrapper {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.swiper-slide {
+    width: auto; /* Cada diapositiva usa su propio tamaño */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.swiper-slide img {
+    max-width: 100%;
+    max-height: 100%; /* Ajusta esto según el diseño */
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #333;
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+}
+
+#header 
+{
+    background: #4fadec;
+    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.5);
+    color: #fff;
+    font-weight: bold;
+    margin: 0;
+    padding: 0.5em;
+}
+
+#header #logo 
+{
+    width: 40px;
+    vertical-align: middle;
+}
+#header #tagline
+{
+    padding: 0 0 0 1em;
+    font-weight: normal;
+    font-size: 1.75em;
+}
+
+#container
+{
+    width: 70%;
+    padding: 0;
+    text-align: left;
+    border: 1px solid #DDD;
+    margin: 0 auto;
+}
+
+#post
+{
+    background: sandybrown;
+    padding: 1em;
+}
+
+#footer
+{
+    background: #cedaf4;
+    color: #000;
+    text-align: center;
+    padding: 0.5em;
 }
