@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <!link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <title>Arlan Tirado</title>
+</head>
+<body>
+    <header>
+        <span class="header__title" id="title"><h1>Mi Portafolio Profesional</h1></span>
+        <div class="language-dropdown">
+            <button id="languageButton">
+                <img id="currentFlag" src="flags/en.png" alt="Flag">
+                <span id="currentLang">EN</span>
+            </button>
+            <ul class="language-menu">
+                <li data-lang="es">
+                    <img src="flags/es.png" alt="Español"> <span>ESP</span>
+                </li>
+                <li data-lang="en">
+                    <img src="flags/en.png" alt="English"> <span>ENG</span>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <nav>
+        <a href="/WebsiteProject/arlan-tir.github.io/index.html" id="home">Inicio</a>
+        <a href="/WebsiteProject/arlan-tir.github.io/certificates.html" id="certificates">Certificaciones</a>
+        <a href="/WebsiteProject/arlan-tir.github.io/projects.html" id="projects">Proyectos</a>
+        <a href="/WebsiteProject/arlan-tir.github.io/about.html" id="about">Sobre Mi</a>
+        <a href="/WebsiteProject/arlan-tir.github.io/contact.html" id="contact">Contacto</a>
+    </nav>
+    <div id="container">
+        <div id="post">
+            <p>
+                Certificados.
+            </p>
+            <p>
+                Aquí se exhiben distintos diplomas y certificaciones que he obtenido.
+            </p>
+            <p>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="assets/cert/AllergenAwarenessCert.jpg" alt="Certificación 1"></div>
+                        <div class="swiper-slide"><img src="assets/cert/DignityatWorkCert.jpg" alt="Certificación 2"></div>
+                        <div class="swiper-slide"><img src="assets/cert/DiversityInclusionandBelongingCert.jpg" alt="Certificación 3"></div>
+                        <div class="swiper-slide"><img src="assets/cert/ErgonomicsCert.jpg" alt="Certificación 4"></div>
+                        <div class="swiper-slide"><img src="assets/cert/FoodHygene1Cert.jpg" alt="Certificación 5"></div>
+                        <div class="swiper-slide"><img src="assets/cert/FoodHygene2Cert.jpg" alt="Certificación 6"></div>
+                        <div class="swiper-slide"><img src="assets/cert/HazardousMatandChemSafetyCert.jpg" alt="Certificación 7"></div>
+                        <div class="swiper-slide"><img src="assets/cert/HealthandSafetySnTCert.jpg" alt="Certificación 8"></div>
+                        <div class="swiper-slide"><img src="assets/cert/KnifeHandlingCert.jpg" alt="Certificación 9"></div>
+                    </div>
+                    <!-- Botones de navegación -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- Paginación -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <img src="" width="70%" />
+            </p>
+        </div>
+        <div id="footer">
+            <p>
+                <span id="greet">Gracias por visitar mi sitio web!</span>
+            </p>
+        </div>
+    </div>
+    <!-- Swiper.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

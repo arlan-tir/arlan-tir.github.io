@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mi Portafolio</title>
+</head>
+<body>
+
+    <header>
+        <span class="header__title" id="title"><h1>Mi Portafolio Profesional</h1></span>
+        <div class="language-dropdown">
+            <button id="languageButton">
+                <img id="currentFlag" src="flags/en.png" alt="Flag">
+                <span id="currentLang">EN</span>
+            </button>
+            <ul class="language-menu">
+                <li data-lang="es">
+                    <img src="flags/es.png" alt="Español"> <span>ESP</span>
+                </li>
+                <li data-lang="en">
+                    <img src="flags/en.png" alt="English"> <span>ENG</span>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <nav>
+        <a href="/WebsiteProject/arlan-tir.github.io/index.html" id="home">Inicio</a>
+        <a href="/WebsiteProject/arlan-tir.github.io/certificates.html" id="certificates">Certificaciones</a>
+        <a href="/WebsiteProject/arlan-tir.github.io/projects.html" id="projects">Proyectos</a>
+        <a href="/WebsiteProject/arlan-tir.github.io/about.html" id="about">Sobre Mi</a>
+        <a href="/WebsiteProject/arlan-tir.github.io/contact.html" id="contact">Contacto</a>
+    </nav>
+<section>
+    <h2 id="welcome">¡Bienvenido a mi portafolio!</h2>
+    <p id="description">Aquí encontrarás información sobre mis certificaciones y proyectos.</p>
+</section>
+<footer class="footer">
+    <div class="footer__item animated pulse">
+        <h2 id="greet">Gracias por visitar mi sitio web!</h2>
+    </div>
+</footer>
+    <!-- Swiper.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
